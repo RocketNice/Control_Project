@@ -667,7 +667,7 @@ html {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 31px;
     color: #191A15;
     display: flex;
     margin-top: 32px;
@@ -1468,7 +1468,7 @@ html {
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     transition: 0.3s;
 }
 
@@ -1479,7 +1479,7 @@ html {
     font-size: 18px;
     line-height: 22px;
     color: #A6A6A6;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
     transition: 0.3s;
 }
 
@@ -1950,6 +1950,14 @@ input {
         padding: 0px 30px;
     }
 
+    .container_all {
+        justify-content: end;
+    }
+
+    .registration {
+        margin-left: 51px;
+    }
+
     .down {
         padding: 0px 6px;
     }
@@ -2150,10 +2158,6 @@ input {
 
     .here_you {
         font-size: 15px;
-    }
-
-    .container_all {
-        justify-content: space-around;
     }
 
     .registration,
@@ -2655,7 +2659,7 @@ input {
 
     .Text_Logo {
         font-size: 38px;
-        line-height: 60px;
+        line-height: 50px;
     }
 
     .img_line {
@@ -2799,7 +2803,7 @@ input {
     }
 
     .choose_plan {
-        margin-top: 80px;
+        margin-top: 0px;
     }
 
     .down_left input {
@@ -2934,6 +2938,10 @@ input {
         margin-right: 18px;
     }
 
+    .gr1_2 {
+        justify-content: space-between;
+    }
+
     .set {
         margin-left: 0px;
         display: flex;
@@ -2993,7 +3001,7 @@ input {
     }
 
     .choose_plan {
-        margin-top: 60px;
+        margin-top: 0px;
     }
 
     .border_choose {
@@ -3198,10 +3206,11 @@ input {
     .how_we,
     .more_then {
         font-size: 38px;
+        line-height: 50px;
     }
 
     .choose_plan_that {
-        line-height: 54px;
+        line-height: 50px;
         font-size: 38px;
     }
 }
@@ -3220,6 +3229,18 @@ input {
 
 @media (max-width:449px) {
     .final_photo {
+        display: none;
+    }
+}
+
+@media (min-width:420px) and (max-width:431px) {
+    .gr_1 {
+        margin-right: 70px;
+    }
+}
+
+@media (max-width:470px) {
+    .what_ben_right {
         display: none;
     }
 }
