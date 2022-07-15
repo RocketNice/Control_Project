@@ -1552,6 +1552,7 @@ input {
 
 .arrow {
     transition: 0.3s;
+    height: 24px;
 }
 
 .arrow:hover svg path {
@@ -1947,7 +1948,7 @@ input {
 
     .container,
     .final_cont {
-        padding: 0px 30px;
+        padding: 1px 30px;
     }
 
     .container_all {
@@ -2332,7 +2333,7 @@ input {
 
     .container,
     .final_cont {
-        padding: 0px 13px;
+        padding: 1px 13px;
     }
 
     .what_ben {
@@ -2537,6 +2538,7 @@ input {
         font-size: 13px;
         padding-right: 10px;
         padding-left: 10px;
+        line-height: 24px;
     }
 
     .menu_top2 {
@@ -2611,9 +2613,16 @@ input {
     }
 
     .Text_Logo {
-        font-size: 49px;
+        font-size: 45px;
         margin-top: 88px;
         line-height: 70px;
+    }
+
+    .how_we,
+    .What_Benifit,
+    .choose_plan_that,
+    .people_are {
+        font-size: 45px;
     }
 
     .text_down {
@@ -2636,7 +2645,7 @@ input {
 
     .container,
     .final_cont {
-        padding: 0px 13px;
+        padding: 1px 13px;
     }
 
     .what_ben {
@@ -2691,7 +2700,7 @@ input {
     }
 
     .more_then {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .collabs {
@@ -3242,5 +3251,48 @@ input {
 @media (max-width:470px) {
     .what_ben_right {
         display: none;
+    }
+}
+
+@media (min-width:709px) and (max-width:768px) {
+
+    .Text_Logo,
+    .how_we,
+    .features_text,
+    .What_Benifit,
+    .choose_plan_that,
+    .people_are {
+        line-height: 46px;
+        font-size: 38px;
+    }
+}
+
+@media (max-width:768px) {
+    .down {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .Text_Logo,
+    .how_we,
+    .features_text,
+    .What_Benifit,
+    .choose_plan_that,
+    .people_are {
+        line-height: 58px;
+    }
+}
+
+@media (max-width:356px) {
+    .people_are {
+        line-height: 50px;
+    }
+}
+
+@media (max-width:431px) {
+    .final_right {
+        height: 550px;
     }
 }

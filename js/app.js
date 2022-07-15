@@ -1,33 +1,30 @@
-const background_rename = document.getElementById('bil')
-const background_rename1 = document.getElementById('billi')
-const background_rename2 = document.getElementById('font')
-const background_rename3 = document.getElementById('zero')
-const background_rename4 = document.getElementById('middle')
-const background_rename5 = document.getElementById('end')
+const Bil_Monthly = document.getElementById('bil')
+const Bil_Yearly = document.getElementById('billi')
+const green_font = document.getElementById('font')
+const number_month = document.getElementById('middle')
+const year = document.getElementById('end')
 
-bil.onclick = () => {
+Bil_Monthly.onclick = () => {
     setTimeout(() => {
-        bil.style.color = '#FFFFFF'
+        Bil_Monthly.style.color = '#FFFFFF'
     }, 800)
-    billi.style.color = 'black'
+    Bil_Yearly.style.color = 'black'
     font.style.animationName = 'green_block'
     font.style.animationDuration = '1s'
     font.style.animationFillMode = 'forwards'
     font.style.animationIterationCount = '1'
-    zero.textContent = '4'
-    middle.textContent = '3'
-    end.textContent = '30'
+    number_month.textContent = '0.66'
+    year.textContent = '1.33'
 }
-billi.onclick = () => {
-    bil.style.color = 'black'
+Bil_Yearly.onclick = () => {
+    Bil_Monthly.style.color = 'black'
     setTimeout(() => {
-        billi.style.color = '#FFFFFF'
+        Bil_Yearly.style.color = '#FFFFFF'
     }, 800)
     font.style.animationName = 'reverse_block'
     font.style.animationDuration = '1s'
     font.style.animationFillMode = 'forwards'
     font.style.animationIterationCount = '1'
-    zero.textContent = '0'
-    middle.textContent = '8'
-    end.textContent = '16'
+    number_month.textContent = '8'
+    year.textContent = '16'
 }
