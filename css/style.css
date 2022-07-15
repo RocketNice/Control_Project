@@ -2268,7 +2268,7 @@ input {
     .menu__login {
         display: block;
         padding: 12px 24px;
-        color: ##A6A6A6;
+        color: #A6A6A6;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 500;
@@ -2465,7 +2465,7 @@ input {
     }
 
     .down {
-        margin-top: 95px;
+        margin-top: 80px;
     }
 
     .final_photo {
@@ -2636,7 +2636,7 @@ input {
     }
 
     .what_ben {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .down {
@@ -2650,6 +2650,7 @@ input {
 
     .ccd {
         flex-wrap: wrap;
+        margin-top: 60px;
     }
 
     .Text_Logo {
@@ -2686,7 +2687,7 @@ input {
     }
 
     .more_then {
-        margin-top: 75px;
+        margin-top: 30px;
     }
 
     .collabs {
@@ -2716,7 +2717,9 @@ input {
     }
 
     .how_we {
-        font-size: 43px;
+        font-size: 33px;
+        line-height: 42px;
+        margin-top: -20px;
     }
 
     .menu_items {
@@ -2770,7 +2773,7 @@ input {
     }
 
     .down {
-        margin-top: 95px;
+        margin-top: 70px;
         display: block;
     }
 
@@ -2796,7 +2799,7 @@ input {
     }
 
     .choose_plan {
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .down_left input {
@@ -2837,7 +2840,7 @@ input {
     }
 
     .we_ofer {
-        font-size: 18px;
+        font-size: 16px;
         padding-right: 0px;
         padding-left: 0px;
         margin-bottom: 30px;
@@ -2878,6 +2881,10 @@ input {
         padding: 0px 13px;
     }
 
+    .how_support {
+        margin-bottom: 0px;
+    }
+
 }
 
 @media (max-width:576px) {
@@ -2908,7 +2915,7 @@ input {
 
 @media (min-width:320px) and (max-width:420px) {
     .gal_and_ben {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .choose_plan_that {
@@ -2916,7 +2923,7 @@ input {
     }
 
     .What_Benifit {
-        font-size: 44px;
+        font-size: 40px;
     }
 
     .choose_mini {
@@ -2924,7 +2931,7 @@ input {
     }
 
     .gr_1 {
-        margin-right: 0px;
+        margin-right: 18px;
     }
 
     .set {
@@ -2965,7 +2972,7 @@ input {
 
 @media (max-width: 324px) {
     .features_text {
-        font-size: 46px;
+        font-size: 40px;
     }
 }
 
@@ -2975,6 +2982,18 @@ input {
         width: 46%;
         left: unset;
         right: 10px;
+    }
+
+    .left_how {
+        margin-bottom: 60px;
+    }
+
+    .our_features {
+        padding-top: 50px;
+    }
+
+    .choose_plan {
+        margin-top: 60px;
     }
 
     .border_choose {
@@ -3115,7 +3134,7 @@ input {
     .try_and_icon {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 87%;
         max-width: unset;
     }
 
@@ -3147,7 +3166,59 @@ input {
     }
 }
 
+@media (max-width:768px) {
+    .pub_image {
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:490px) {
+    .down_right div:last-child {
+        width: 50%;
+    }
+
+    .down_right {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .string1 {
+        margin-right: 33px;
+        margin-top: 22px;
+    }
+}
+
+@media (max-width:431px) {
+    .euro img {
+        width: 90%;
+    }
+
+    .What_Benifit,
+    .features_text,
+    .how_we,
+    .more_then {
+        font-size: 38px;
+    }
+
+    .choose_plan_that {
+        line-height: 54px;
+        font-size: 38px;
+    }
+}
+
 @media (max-width:878px) {
+    .final_photo1 {
+        display: none;
+    }
+}
+
+@media (max-width:840px) {
+    .final_photo2 {
+        display: none;
+    }
+}
+
+@media (max-width:449px) {
     .final_photo {
         display: none;
     }
