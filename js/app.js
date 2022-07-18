@@ -28,3 +28,57 @@ Bil_Yearly.onclick = () => {
     number_month.textContent = '8'
     year.textContent = '16'
 }
+
+function burgerMenu(selectors) {
+    let menu = document.querySelector(selectors);
+    let button = document.querySelector('.burger-menu_button');
+    let links = document.querySelector('.burger-menu_link')
+    let overlay = document.querySelector('.burger-menu_overlay')
+
+    button.on('click', (e) => {
+        e.preventDefault();
+        toggleMenu();
+    });
+
+    links.on('click', () => toggleMenu());
+    overlay.on('click', () => toggleMenu());
+
+    function toggleMenu() {
+        menu.toggleClass('burger-menu_active');
+
+        if (menu.hasClass('burger-menu_active')) {
+            $('body').css('overlow', 'hidden');
+        } else {
+            $('body').css('overlow', 'visible');
+        }
+    }
+}
+
+burgerMenu('.burger-menu');
+
+// function burgerMenu(selector) {
+//     let menu = $(selector); //Переменная для элемента меню queryselector
+//     let button = menu.find('.burger-menu_button', '.burger-menu_lines');//кнопки внутри элемента меню
+//     let links = menu.find('.burger-menu_link');
+//     let overlay = menu.find('.burger-menu_overlay');
+
+//     button.on('click', (e) => {
+//         e.preventDefault();
+//         toggleMenu();
+//     });
+
+//     links.on('click', () => toggleMenu()); //закрытие меню при нажатие на ссылку
+//     overlay.on('click', () => toggleMenu()); //закрытие меню на нажатие области вне меню
+
+//     function toggleMenu() {
+//         menu.toggleClass('burger-menu_active');//добавляет или убирает класс 'burger-menu_active'
+
+//         if (menu.hasClass('burger-menu_active')) { //проверяем открыто ли меню
+//             $('body').css('overlow', 'hidden'); //блокируем скролл страницы
+//         } else {
+//             $('body').css('overlow', 'visible');//разблокируем скролл
+//         }
+//     }
+// }
+
+// burgerMenu('.burger-menu');
