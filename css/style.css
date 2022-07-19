@@ -7,7 +7,7 @@
 
 .gradient {
     background: linear-gradient(#F5F5F5, #52BDAA);
-    filter: blur(400px);
+    filter: blur(250px);
     position: absolute;
     z-index: -1;
     left: -317px;
@@ -24,9 +24,8 @@
     left: 581px;
     top: -364px;
     /* background: #FFD6D6; */
-    filter: blur(1000px);
     background: linear-gradient(#F5F5F5, #FFD6D6);
-    filter: blur(1000px);
+    filter: blur(400px);
 }
 
 .gradient2 {
@@ -37,7 +36,7 @@
     left: 376px;
     top: 219px;
     background: linear-gradient(#F5F5F5, #FFFFFF);
-    filter: blur(1000px);
+    filter: blur(250px);
 }
 
 .gradient3 {
@@ -48,7 +47,7 @@
     top: 270px;
     z-index: -1;
     background: linear-gradient(#F5F5F5, #54BE96);
-    filter: blur(1000px);
+    filter: blur(250px);
 }
 
 .gradient4 {
@@ -59,7 +58,7 @@
     top: 0px;
     z-index: -1;
     background: linear-gradient(#F5F5F5, #FFD6D6);
-    filter: blur(1000px);
+    filter: blur(250px);
 }
 
 .gradient5 {
@@ -70,7 +69,7 @@
     top: -148px;
     z-index: -1;
     background: linear-gradient(#F5F5F5, #54BE96);
-    filter: blur(1000px);
+    filter: blur(250px);
 }
 
 @font-face {
