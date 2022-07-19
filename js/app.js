@@ -35,26 +35,30 @@ function burgerMenu(selectors) {
     let links = document.querySelector('.burger-menu_link')
     let overlay = document.querySelector('.burger-menu_overlay')
 
-    button.on('click', (e) => {
+    button.onclick = (e) => {
         e.preventDefault();
         toggleMenu();
-    });
+    };
 
-    links.on('click', () => toggleMenu());
-    overlay.on('click', () => toggleMenu());
+    links.onclick = () => toggleMenu();
+    overlay.onclick = () => toggleMenu();
 
     function toggleMenu() {
-        menu.toggleClass('burger-menu_active');
+        menu.classList.toggle('burger-menu_active');
 
-        if (menu.hasClass('burger-menu_active')) {
-            $('body').css('overlow', 'hidden');
+        if (menu.classList.contains('burger-menu_active')) {
+            document.querySelectorAll('body').forEach(function (el) {
+                el.style.overlow = 'hidden';
+            });
         } else {
-            $('body').css('overlow', 'visible');
+            document.querySelectorAll('body').forEach(function (el) {
+                el.style.overlow = 'visible';
+            });
         }
     }
 }
-
 burgerMenu('.burger-menu');
+console.log("kkk")
 
 // function burgerMenu(selector) {
 //     let menu = $(selector); //Переменная для элемента меню queryselector
