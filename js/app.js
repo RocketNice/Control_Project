@@ -58,7 +58,6 @@ function burgerMenu(selectors) {
     }
 }
 burgerMenu('.burger-menu');
-console.log("kkk")
 
 // function burgerMenu(selector) {
 //     let menu = $(selector); //Переменная для элемента меню queryselector
